@@ -8,7 +8,7 @@ import time
 # Replace with actual values
 max_alert_amount = "20000"
 max_claim_alert_amount = "5000"
-email_to_add = ""  # Replace with the actual email
+email_to_add = "masosoelvin@gmail.com"  # Replace with the actual email
 
 
 def perform_operations(driver):
@@ -76,7 +76,7 @@ def perform_operations(driver):
 
                 # Then locate the specific input within that div
                 autocomplete_input = parent_div.find_element(By.XPATH, "//input[@type='text']")
-                autocomplete_input.send_keys("SAMPLE SCHEME")
+                autocomplete_input.send_keys("TEST CUSTOMER 100")
 
                 # Wait for the autocomplete suggestions to appear
                 suggestions = WebDriverWait(driver, 50).until(
@@ -85,7 +85,7 @@ def perform_operations(driver):
 
                 # Select the desired suggestion
                 for suggestion in suggestions:
-                    if "SAMPLE SCHEME" in suggestion.text:  # Replace with the desired suggestion
+                    if "TEST CUSTOMER 100" in suggestion.text:  # Replace with the desired suggestion
                         suggestion.click()
                         break
 
@@ -151,7 +151,7 @@ def perform_operations(driver):
                                                   "(//input[@class='mud-input-slot mud-input-root "
                                                   "mud-input-root-outlined' and @type='text'])[3]"))
             )
-            email_field.clear()
+
             email_field.send_keys(email_to_add)
 
             # Locate and click the Add button
