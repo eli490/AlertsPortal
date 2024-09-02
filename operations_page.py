@@ -8,7 +8,7 @@ import time
 # Replace with actual values
 max_alert_amount = "20000"
 max_claim_alert_amount = "5000"
-email_to_add = "masosoelvin@gmail.com"  # Replace with the actual email
+email_to_add = ""  # Replace with the actual email
 
 
 def perform_operations(driver):
