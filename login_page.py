@@ -6,7 +6,7 @@ from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
 # Replace with actual login credentials
-username = ""
+username = "TEST"
 password = ""
 
 # Specify the path to the ChromeDriver executable
