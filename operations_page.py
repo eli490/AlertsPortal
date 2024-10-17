@@ -6,8 +6,8 @@ from selenium.webdriver.common.by import By
 import time
 
 # Replace with actual values
-max_alert_amount = "20000"
-max_claim_alert_amount = "5000"
+max_alert_amount = ""
+max_claim_alert_amount = ""
 email_to_add = ""  # Replace with the actual email
 
 
